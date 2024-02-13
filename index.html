@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamMenu = document.querySelector(".mobile-container");
+            const navItem = document.querySelector(".nav-pc");
+
+            hamMenu.addEventListener("click", () => {
+                hamMenu.classList.toggle("active");
+                navItem.classList.toggle("active");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <span id="home-page"></span>
+    <div>
+        <nav class="nav-container">
+            <div class="nav-pc">
+                <ul class="ul-items">
+                    <li><a href="#home-page">Home</a></li>
+                    <li><a href="#aboutme-n">About</a></li>
+                    <li><a href="#skills-n">Skills</a></li>
+                    <li><a href="#projects112">Projects</a></li>
+                    <li><a href="#games-n">Games</a></li>
+                </ul>
+            </div>
+            <div class="mobile-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-mode">
+                <button><img src="light-dark mode.png" alt="image"></button>
+            </div>
+        </nav><!--ending of nav bar content-->
+
+        <div class="home-page">
+            <p class="myname">
+                Hi there!<br> I'm U.Nikhil,</p>
+            <p class="subpart"> a passionate Web Developer
+                <br>I love crafting elegant and functional websites that bring ideas to life.
+            </p>
+            <div class="social-img">
+                <a href="#"><img src="icons/github.png"></a>
+                <a href=""><img src="icons/Linkedin.png"></a>
+                <a href=""><img src="icons/forage.png"></a>
+            </div>
+        </div>
+        <!--end of home page-->
+        <!--about me section begins-->
+        <div class="aboutme-n" id="aboutme-n">
+            <section id="headStyle">
+                <h1>About</h1>
+            </section>
+            <p class="para-abt">
+                Hello, I'm U. Nikhil, Currently, I am pursuing my second-year of B.Sc. Computer Science and Cloud
+                Computing.
+                My academic journey has been focused on gaining a deep understanding of the intricacies of computer
+                science, with a
+                special emphasis on cloud computing technologies.<br><br>
+
+                One of my primary areas of interest and expertise lies in web development. I find great joy and
+                fulfillment in
+                creating engaging and functional websites. My proficiency extends to HTML, CSS, JavaScript, and PHP,
+                allowing me
+                to not only develop basic websites but also experiment with more advanced and dynamic projects.<br><br>
+                My goal is to contribute to the digital landscape by creating innovative and efficient web
+                solutions.Beyond my technical skills, I am a
+                proactive learner, always seeking opportunities to expand my knowledge and stay ahead in the rapidly
+                evolving field
+                of technology.<br><br>
+
+                In addition to my studies, I actively engage in personal projects to apply and enhance my skills.
+                I am open to collaboration and believe in the importance of teamwork for achieving successful outcomes.
+                As I progress through
+                my academic journey, I am excited about the prospect of contributing my skills and knowledge to
+                real-world projects and making
+                a positive impact in the field of web development.</p>
+        </div>
+        <div id="skills-n">
+            <section id="headStyle">
+                <h1>Skills</h1>
+            </section>
+            <div class="skills-container">
+                <div class="column1">
+                    <span title="90%" class="html">HTML</span>
+                    <span title="90%" class="CSS">CSS</span>
+                    <span title="70%" class="JAVA-SCRIPT">JavaScript</span>
+                </div>
+                <div class="column2">
+                    <span title="50%" class="PHP">PHP</span>
+                    <span title="50%" class="AWS">AWS</span>
+                    <span title="90%" class="MYSQL">MYSQL</span>
+                </div>
+            </div>
+        </div>
+        <span id="projects112"></span>
+        <div class="projects-n">
+            <section id="headStyle">
+                <h1>Projects</h1>
+            </section>
+            <div class="project-container">
+                <div>
+                    <a href=""><img src="project.jpg" alt="image"></a>
+                    <a href=""><img src="project.jpg" alt="image"></a>
+                </div>
+                <div>
+                    <a href=""><img src="project.jpg" alt="image"></a>
+                    <a href=""><img src="project.jpg" alt="image"></a>
+                </div>
+            </div>
+        </div>
+        <div id="games-n">
+            <section id="headStyle">
+                <h1>Games</h1>
+            </section>
+            <div class="game-container">
+            <a href=""><img src="games\istockphoto-1019489342-612x612.jpg" alt="photo"></a>
+            <a href=""><img src="games\rock paper.PNG" alt="photo"></a>
+        </div>
+        </div>
+    <footer>
+        <div class="div-fot">
+            <p>Interested in teaming up? Let's find a time that works for both of us to discuss<a href=""><span
+                        id="span-box">join us</span></a> <br>potential collaboration and explore how we can work
+                together.</p>
+        </div>
+        <div class="final-div">
+            <p>Thanks for visiting my portfolio! Your interest means a lot to me. If you enjoyed what you saw,
+                feel free to follow me on social media to stay updated with my latest projects and creative endeavors
+            </p>
+            <label>Follow me on</label>
+            <div class="media-social">
+            <a href=""><img src="social/insta.png" style="border-radius: 30%;"></a>
+            <a href=""><img src="social/github.png" style=" margin-left: 2%; border-radius: 50%;"></a>
+            <a href=""><img src="social/Linkedin.png" style=" margin-left: 2%; border-radius: 10%;"></a>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+        <script>
+            const toggleThemeButton = document.querySelector(".theme-mode button");
+            const body = document.body;
+
+            toggleThemeButton.addEventListener("click", () => {
+                body.classList.toggle("dark-mode");
+                toggleBackgroundColor();
+            });
+            toggleBackgroundColor();
+
+            function toggleBackgroundColor() {
+                const isToggled = body.classList.contains("dark-mode");
+                if (!isToggled) {
+                    body.style.backgroundColor = 'initial';
+                } else {
+                    body.style.backgroundColor = '#000000dd';
+                }
+            }
+        </script>
+</body>
+
+</html>
