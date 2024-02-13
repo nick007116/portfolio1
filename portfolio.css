@@ -469,3 +469,21 @@ body .ul-items li a {
         width: 40px;
     }
 }
+@media screen and (max-width: 388px){
+    .div-fot{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #span-box{
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width: 325px){
+    .div-fot{
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    #span-box{
+        margin-left: 5px;
+    }
+}
