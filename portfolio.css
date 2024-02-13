@@ -471,11 +471,11 @@ body .ul-items li a {
 }
 @media screen and (max-width: 388px){
     .div-fot{
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 3px;
+        margin-left: 3px;
     }
     #span-box{
-        margin-left: 7px;
+        margin-left: 5px;
     }
 }
 @media screen and (max-width: 325px){
